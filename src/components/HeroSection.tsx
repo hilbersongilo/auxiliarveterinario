@@ -46,13 +46,16 @@ const HeroSection = () => {
           <div className="flex flex-wrap gap-4">
             <a
               href="#lotes"
-              className="inline-flex items-center justify-center rounded-lg bg-primary text-primary-foreground font-heading font-semibold text-lg px-8 py-4 neon-glow hover:brightness-110 transition-all"
+              className="group relative inline-flex items-center justify-center rounded-xl bg-primary text-primary-foreground font-heading font-bold text-lg px-10 py-5 neon-glow hover:brightness-110 transition-all animate-pulse-neon overflow-hidden"
             >
-              Garanta sua vaga
+              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+              <span className="relative flex items-center gap-2">
+                🔥 GARANTA SUA VAGA — VAGAS LIMITADAS
+              </span>
             </a>
             <a
               href="#sobre"
-              className="inline-flex items-center justify-center rounded-lg border border-border text-foreground font-heading font-medium text-lg px-8 py-4 hover:bg-secondary transition-colors"
+              className="inline-flex items-center justify-center rounded-xl border border-border text-foreground font-heading font-medium text-lg px-8 py-5 hover:bg-secondary transition-colors"
             >
               Saiba mais
             </a>
