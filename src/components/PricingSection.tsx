@@ -48,31 +48,23 @@ const PricingSection = () => {
             return (
               <div
                 key={lot.name}
-                className={`relative rounded-2xl border p-8 flex flex-col items-center text-center transition-all duration-500 ${
+                className={`relative rounded-2xl border-2 p-8 flex flex-col items-center text-center transition-all duration-500 ${
                   isActive
                     ? "border-primary bg-primary/5 neon-border-glow animate-pulse-neon"
                     : "border-border bg-card dim-card"
                 }`}
               >
                 {isActive && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary text-primary-foreground text-xs font-bold px-4 py-1 uppercase tracking-wider">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary text-primary-foreground text-xs font-bold px-4 py-1 uppercase tracking-wider neon-glow">
                     Ativo agora
                   </div>
                 )}
 
-                <h3
-                  className={`text-2xl font-heading font-bold mb-2 ${
-                    isActive ? "text-primary neon-text-glow" : "text-muted-foreground"
-                  }`}
-                >
+                <h3 className={`text-2xl font-heading font-bold mb-2 ${isActive ? "text-primary neon-text-glow" : "text-muted-foreground"}`}>
                   {lot.name}
                 </h3>
 
-                <p
-                  className={`text-4xl font-heading font-bold mb-1 ${
-                    isActive ? "text-foreground" : "text-muted-foreground"
-                  }`}
-                >
+                <p className={`text-4xl font-heading font-bold mb-1 ${isActive ? "text-foreground" : "text-muted-foreground"}`}>
                   {lot.installments}
                 </p>
 
@@ -80,22 +72,14 @@ const PricingSection = () => {
                   {lot.detail}
                 </p>
 
-                <div
-                  className={`w-full rounded-lg py-3 px-4 text-sm font-medium mb-6 ${
-                    isActive
-                      ? "bg-primary/10 text-primary border border-primary/30"
-                      : "bg-muted text-muted-foreground"
-                  }`}
-                >
+                <div className={`w-full rounded-lg py-3 px-4 text-sm font-medium mb-6 ${isActive ? "bg-primary/10 text-primary border border-primary/30" : "bg-muted text-muted-foreground"}`}>
                   📅 {lot.period}
                 </div>
 
                 {isActive ? (
-                  <a
-                    href="#contato"
-                    className="w-full inline-flex items-center justify-center rounded-lg bg-primary text-primary-foreground font-heading font-semibold py-3 neon-glow hover:brightness-110 transition-all"
-                  >
-                    Matricule-se
+                  <a href="#contato" className="cta-button w-full text-base py-3">
+                    <span className="cta-button-shine" />
+                    <span className="relative">🔥 Matricule-se Agora</span>
                   </a>
                 ) : isPast ? (
                   <span className="w-full inline-flex items-center justify-center rounded-lg bg-muted text-muted-foreground font-heading font-medium py-3">
@@ -111,9 +95,12 @@ const PricingSection = () => {
           })}
         </div>
 
-        <p className="text-center text-primary font-heading font-semibold text-lg mt-10 neon-text-glow">
-          ⚡ Vagas limitadas
-        </p>
+        <div className="text-center mt-12">
+          <a href="#contato" className="cta-button">
+            <span className="cta-button-shine" />
+            <span className="relative flex items-center gap-2">🔥 GARANTA SUA VAGA — VAGAS LIMITADAS</span>
+          </a>
+        </div>
       </div>
     </section>
   );

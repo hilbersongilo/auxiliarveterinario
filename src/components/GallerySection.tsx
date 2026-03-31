@@ -20,7 +20,7 @@ const GallerySection = () => {
         </p>
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {images.map((img) => (
-            <div key={img.caption} className="group relative rounded-2xl overflow-hidden border border-border">
+            <div key={img.caption} className="group relative rounded-2xl overflow-hidden border border-border shadow-lg">
               <img
                 src={img.src}
                 alt={img.alt}
@@ -29,12 +29,19 @@ const GallerySection = () => {
                 loading="lazy"
                 className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5">
-                <span className="text-sm font-heading font-semibold text-primary">{img.caption}</span>
+                <span className="text-sm font-heading font-semibold text-primary-foreground">{img.caption}</span>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a href="#lotes" className="cta-button">
+            <span className="cta-button-shine" />
+            <span className="relative flex items-center gap-2">🔥 GARANTA SUA VAGA — VAGAS LIMITADAS</span>
+          </a>
         </div>
       </div>
     </section>

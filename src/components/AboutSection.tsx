@@ -22,7 +22,7 @@ const AboutSection = () => {
               { icon: "📜", title: "Certificação", desc: "Média ≥ 7,0 e 75% de presença" },
               { icon: "🤝", title: "Parcerias", desc: "Hospital Vet. Animalzão e Clínica Planeta Animal" },
             ].map((item) => (
-              <div key={item.title} className="flex gap-4 items-start rounded-xl border border-border bg-card p-5">
+              <div key={item.title} className="flex gap-4 items-start rounded-xl border border-border bg-card p-5 shadow-sm">
                 <span className="text-2xl">{item.icon}</span>
                 <div>
                   <h3 className="font-heading font-semibold text-foreground">{item.title}</h3>
@@ -32,10 +32,17 @@ const AboutSection = () => {
             ))}
           </div>
 
+          <div className="text-center mb-16">
+            <a href="#lotes" className="cta-button">
+              <span className="cta-button-shine" />
+              <span className="relative flex items-center gap-2">🔥 GARANTA SUA VAGA — VAGAS LIMITADAS</span>
+            </a>
+          </div>
+
           <h3 className="text-3xl font-heading font-bold text-foreground mb-6">
             Grade Curricular
           </h3>
-          <div className="rounded-xl border border-border overflow-hidden">
+          <div className="rounded-xl border border-border overflow-hidden shadow-sm">
             {[
               { name: "Introdução à Medicina Veterinária e Anatomia e Fisiologia Animal", hours: "20h" },
               { name: "Administração e Atendimento em Clínica e Pet Shop", hours: "20h" },
