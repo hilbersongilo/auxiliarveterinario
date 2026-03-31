@@ -23,7 +23,7 @@ const MethodologySection = () => {
             {strategies.map((s, i) => (
               <div
                 key={i}
-                className="rounded-xl border border-border bg-card p-5 text-left hover:border-primary/30 transition-colors"
+                className="rounded-xl border border-border bg-card p-5 text-left hover:border-primary/40 transition-colors shadow-sm"
               >
                 <div className="h-8 w-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center font-heading font-bold text-sm mb-3">
                   {String(i + 1).padStart(2, "0")}
@@ -31,6 +31,13 @@ const MethodologySection = () => {
                 <p className="text-sm text-foreground font-medium">{s}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-12">
+            <a href="#lotes" className="cta-button">
+              <span className="cta-button-shine" />
+              <span className="relative flex items-center gap-2">🔥 GARANTA SUA VAGA — VAGAS LIMITADAS</span>
+            </a>
           </div>
         </div>
       </div>
