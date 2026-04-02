@@ -37,8 +37,8 @@
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --neon-glow: 234 60% 55%;
-    --neon-dim: 234 30% 70%;
+    --neon-glow: 225 50% 20%;
+    --neon-dim: 225 30% 50%;
     --surface-elevated: 0 0% 96%;
 
     --sidebar-background: 0 0% 98%;
