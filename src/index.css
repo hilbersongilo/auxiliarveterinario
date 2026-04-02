@@ -43,12 +43,12 @@
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 220 20% 10%;
-    --sidebar-primary: 234 41% 38%;
+    --sidebar-primary: 225 50% 20%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 234 10% 94%;
+    --sidebar-accent: 225 10% 94%;
     --sidebar-accent-foreground: 220 20% 10%;
     --sidebar-border: 220 10% 88%;
-    --sidebar-ring: 234 41% 38%;
+    --sidebar-ring: 225 50% 20%;
 
     --banner: 48 95% 55%;
     --banner-foreground: 0 0% 5%;
