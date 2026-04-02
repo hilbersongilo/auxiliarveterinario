@@ -15,7 +15,7 @@
     --popover: 0 0% 98%;
     --popover-foreground: 220 20% 10%;
 
-    --primary: 234 41% 38%;
+    --primary: 225 50% 20%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 234 10% 94%;
@@ -24,7 +24,7 @@
     --muted: 220 10% 95%;
     --muted-foreground: 220 10% 40%;
 
-    --accent: 234 50% 30%;
+    --accent: 225 50% 15%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,23 +32,23 @@
 
     --border: 220 10% 88%;
     --input: 220 10% 88%;
-    --ring: 234 41% 38%;
+    --ring: 225 50% 20%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --neon-glow: 234 60% 55%;
-    --neon-dim: 234 30% 70%;
+    --neon-glow: 225 50% 20%;
+    --neon-dim: 225 30% 50%;
     --surface-elevated: 0 0% 96%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 220 20% 10%;
-    --sidebar-primary: 234 41% 38%;
+    --sidebar-primary: 225 50% 20%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 234 10% 94%;
+    --sidebar-accent: 225 10% 94%;
     --sidebar-accent-foreground: 220 20% 10%;
     --sidebar-border: 220 10% 88%;
-    --sidebar-ring: 234 41% 38%;
+    --sidebar-ring: 225 50% 20%;
 
     --banner: 48 95% 55%;
     --banner-foreground: 0 0% 5%;
@@ -71,19 +71,15 @@
 
 @layer utilities {
   .neon-glow {
-    box-shadow: 0 0 20px hsl(var(--neon-glow) / 0.5),
-                0 0 60px hsl(var(--neon-glow) / 0.2),
-                inset 0 0 20px hsl(var(--neon-glow) / 0.1);
+    box-shadow: none;
   }
 
   .neon-text-glow {
-    text-shadow: 0 0 10px hsl(var(--neon-glow) / 0.5),
-                 0 0 30px hsl(var(--neon-glow) / 0.25);
+    text-shadow: none;
   }
 
   .neon-border-glow {
-    box-shadow: 0 0 15px hsl(var(--neon-glow) / 0.4),
-                inset 0 0 15px hsl(var(--neon-glow) / 0.08);
+    box-shadow: none;
   }
 
   .dim-card {
@@ -105,14 +101,10 @@
     padding: 1.25rem 2.5rem;
     overflow: hidden;
     transition: all 0.2s;
-    box-shadow: 0 0 20px hsl(var(--neon-glow) / 0.5),
-                0 0 60px hsl(var(--neon-glow) / 0.2),
-                inset 0 0 20px hsl(var(--neon-glow) / 0.1);
-    animation: pulse-neon 2s ease-in-out infinite;
   }
 
   .cta-button:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.15);
   }
 
   .cta-button-shine {
