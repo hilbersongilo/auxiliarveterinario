@@ -71,19 +71,15 @@
 
 @layer utilities {
   .neon-glow {
-    box-shadow: 0 0 20px hsl(var(--neon-glow) / 0.5),
-                0 0 60px hsl(var(--neon-glow) / 0.2),
-                inset 0 0 20px hsl(var(--neon-glow) / 0.1);
+    box-shadow: none;
   }
 
   .neon-text-glow {
-    text-shadow: 0 0 10px hsl(var(--neon-glow) / 0.5),
-                 0 0 30px hsl(var(--neon-glow) / 0.25);
+    text-shadow: none;
   }
 
   .neon-border-glow {
-    box-shadow: 0 0 15px hsl(var(--neon-glow) / 0.4),
-                inset 0 0 15px hsl(var(--neon-glow) / 0.08);
+    box-shadow: none;
   }
 
   .dim-card {
@@ -105,14 +101,10 @@
     padding: 1.25rem 2.5rem;
     overflow: hidden;
     transition: all 0.2s;
-    box-shadow: 0 0 20px hsl(var(--neon-glow) / 0.5),
-                0 0 60px hsl(var(--neon-glow) / 0.2),
-                inset 0 0 20px hsl(var(--neon-glow) / 0.1);
-    animation: pulse-neon 2s ease-in-out infinite;
   }
 
   .cta-button:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.15);
   }
 
   .cta-button-shine {
