@@ -23,10 +23,11 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-primary">Inscrições Abertas — Vagas Limitadas</span>
           </div>
 
+          <p className="text-lg md:text-xl font-heading font-medium text-primary mb-2">Curso de</p>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-heading font-bold tracking-tight leading-[0.9] mb-6">
-            <span className="text-primary neon-text-glow">Auxiliar de</span>
+            <span className="text-primary">Auxiliar de</span>
             <br />
-            <span className="text-primary neon-text-glow">Veterinário</span>
+            <span className="text-primary">Veterinário</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4">
