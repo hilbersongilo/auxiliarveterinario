@@ -23,10 +23,6 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-primary">Inscrições Abertas — Vagas Limitadas</span>
           </div>
 
-          <p className="text-base md:text-lg text-muted-foreground font-medium tracking-wide uppercase mb-2">
-            Curso de Extensão em
-          </p>
-
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-heading font-bold tracking-tight leading-[0.9] mb-6">
             <span className="text-primary neon-text-glow">Auxiliar de</span>
             <br />
@@ -47,7 +43,9 @@ const HeroSection = () => {
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="#lotes"
+              href="https://unijb.multiversa.edu.br/api/Comprar.aspx?id=742835"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cta-button text-xl px-12 py-6"
             >
               <span className="cta-button-shine" />

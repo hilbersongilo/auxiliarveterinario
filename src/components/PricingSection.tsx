@@ -77,7 +77,7 @@ const PricingSection = () => {
                 </div>
 
                 {isActive ? (
-                  <a href="#contato" className="cta-button w-full text-base py-3">
+                  <a href="https://unijb.multiversa.edu.br/api/Comprar.aspx?id=742835" target="_blank" rel="noopener noreferrer" className="cta-button w-full text-base py-3">
                     <span className="cta-button-shine" />
                     <span className="relative">🔥 Matricule-se Agora</span>
                   </a>
@@ -96,7 +96,7 @@ const PricingSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a href="#contato" className="cta-button">
+          <a href="https://unijb.multiversa.edu.br/api/Comprar.aspx?id=742835" target="_blank" rel="noopener noreferrer" className="cta-button">
             <span className="cta-button-shine" />
             <span className="relative flex items-center gap-2">🔥 GARANTA SUA VAGA — VAGAS LIMITADAS</span>
           </a>

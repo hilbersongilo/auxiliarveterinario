@@ -33,7 +33,7 @@ const AboutSection = () => {
           </div>
 
           <div className="text-center mb-16">
-            <a href="#lotes" className="cta-button">
+            <a href="https://unijb.multiversa.edu.br/api/Comprar.aspx?id=742835" target="_blank" rel="noopener noreferrer" className="cta-button">
               <span className="cta-button-shine" />
               <span className="relative flex items-center gap-2">🔥 GARANTA SUA VAGA — VAGAS LIMITADAS</span>
             </a>

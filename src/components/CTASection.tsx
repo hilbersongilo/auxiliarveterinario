@@ -21,7 +21,7 @@ const CTASection = () => {
             Formação completa com certificação universitária.
           </p>
           <a
-            href="https://wa.me/5500000000000"
+            href="https://unijb.multiversa.edu.br/api/Comprar.aspx?id=742835"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button text-xl px-12 py-6"
