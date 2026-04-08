@@ -31,7 +31,7 @@ const HeroSection = () => {
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4">
             210 horas de formação presencial — 140h teórico-práticas + 70h de estágio supervisionado.
-            Capacite-se para atuar em clínicas, hospitais veterinários, pet shops e muito mais.
+            Capacite-se para atuar em clínicas, hospitais veterinários, pet shops, ONGs de proteção animal e muito mais.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground mb-10">
