@@ -29,6 +29,7 @@ const Index = () => {
         <MarqueeBanner />
         <Footer />
       </div>
+      <WhatsAppButton />
     </div>
   );
 };
