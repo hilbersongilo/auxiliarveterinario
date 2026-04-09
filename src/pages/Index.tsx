@@ -7,6 +7,7 @@ import AboutSection from "@/components/AboutSection";
 import MethodologySection from "@/components/MethodologySection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
